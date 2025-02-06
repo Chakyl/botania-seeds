@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cross",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "cross": "botania_seeds:block/pink_mystical_flower_crop_stage4"
+  }
+}

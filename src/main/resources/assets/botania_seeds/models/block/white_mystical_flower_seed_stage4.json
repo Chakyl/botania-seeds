@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cross",
-  "render_type": "minecraft:cutout",
-  "textures": {
-    "cross": "botania_seeds:block/white_mystical_flower_seed_stage4"
-  }
-}
