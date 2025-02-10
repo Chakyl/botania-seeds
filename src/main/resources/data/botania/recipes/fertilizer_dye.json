@@ -1,0 +1,52 @@
+{
+  "type": "botania:gog_alternation",
+  "base": {
+    "type": "minecraft:crafting_shapeless",
+    "category": "misc",
+    "ingredients": [
+      {
+        "item": "minecraft:bone_meal"
+      },
+      {
+        "tag": "botania:petals"
+      },
+      {
+        "tag": "botania:petals"
+      },
+      {
+        "tag": "botania:petals"
+      },
+      {
+        "tag": "botania:petals"
+      }
+    ],
+    "result": {
+      "item": "botania:fertilizer"
+    }
+  },
+  "gog": {
+    "type": "minecraft:crafting_shapeless",
+    "category": "misc",
+    "ingredients": [
+      {
+        "item": "minecraft:bone_meal"
+      },
+      {
+        "tag": "botania:petals"
+      },
+      {
+        "tag": "botania:petals"
+      },
+      {
+        "tag": "botania:petals"
+      },
+      {
+        "tag": "botania:petals"
+      }
+    ],
+    "result": {
+      "count": 3,
+      "item": "botania:fertilizer"
+    }
+  }
+}

@@ -14,6 +14,9 @@
     },
     "age=4": {
       "model": "botania_seeds:block/yellow_mystical_flower_crop_stage4"
+    },
+    "age=5": {
+      "model": "botania_seeds:block/yellow_mystical_flower_crop_stage4"
     }
   }
 }

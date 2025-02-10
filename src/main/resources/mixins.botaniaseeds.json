@@ -1,0 +1,13 @@
+{
+    "required": true,
+    "minVersion": "0.8.5",
+    "package": "io.github.chakyl.botaniaseeds.mixin",
+    "compatibilityLevel": "JAVA_17",
+    "mixins": [
+      "MixinBuriedPetalBlock"
+    ],
+    "injectors": {
+      "defaultRequire": 1
+    },
+    "refmap": "mixins.botaniaseeds.refmap.json"
+  }

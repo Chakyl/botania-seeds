@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "group": "botania_seeds:seed",
+    "key": {
+      "D": {
+        "tag": "forge:dyes/green"
+      },
+      "S": {
+        "tag": "forge:seeds"
+      }
+    },
+    "pattern": [
+      " D ",
+      "DSD",
+      " D "
+    ],
+    "result": {
+      "count": 4,
+      "item": "botania_seeds:green_mystical_flower_seed"
+    }
+  }

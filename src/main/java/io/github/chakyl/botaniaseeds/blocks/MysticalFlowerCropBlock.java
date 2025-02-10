@@ -18,16 +18,12 @@ import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraftforge.common.IPlantable;
 import vazkii.botania.client.fx.SparkleParticleData;
-import vazkii.botania.common.block.BotaniaFlowerBlock;
 import vazkii.botania.common.item.material.MysticalPetalItem;
 import vazkii.botania.xplat.BotaniaConfig;
 
 public class MysticalFlowerCropBlock extends CropBlock implements IPlantable {
-    public static int MAX_AGE = 4;
-    public static final IntegerProperty AGE = BlockStateProperties.AGE_4;
-    private static final float AABB_OFFSET = 3.0F;
-    private static final VoxelShape[] SHAPE_BY_AGE = new VoxelShape[]{Block.box(5.0D, 0.0D, 5.0D, 11.0D, 6.0D, 11.0D), Block.box(5.0D, 0.0D, 5.0D, 11.0D, 10.0D, 11.0D)};
-    private static final int BONEMEAL_INCREASE = 1;
+    public static int MAX_AGE = 5;
+    public static final IntegerProperty AGE = BlockStateProperties.AGE_5;
     private final Block FLOWER_BLOCK;
     private final DyeColor DYE_COLOR;
 
@@ -94,8 +90,5 @@ public class MysticalFlowerCropBlock extends CropBlock implements IPlantable {
             super.randomTick(blockState, level, pos, randomSource);
         }
 
-    }
-    protected  int getBonemealIncrease(Level level) {
-        return 1;
     }
 }

@@ -8,7 +8,6 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.client.model.generators.ConfiguredModel;
-import net.minecraftforge.client.model.generators.ModelProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.ForgeRegistries;
 
@@ -25,12 +24,12 @@ public class ModBlockStateProvider extends BlockStateProvider {
     protected void registerStatesAndModels() {
         ModElements.CROP_BLOCKS.getEntries().forEach(entry -> {
             customStageBlock(entry.get(), "cross", new ArrayList<>());
-
         });
     }
     public void customStageBlock(Block block, String textureKey, List<Integer> suffixes) {
         getVariantBuilder(block).forAllStates(state -> {
             int ageSuffix = state.getValue(MysticalFlowerCropBlock.AGE);
+            if (ageSuffix == 5) ageSuffix = 4;
             String stageName = Objects.requireNonNull(ForgeRegistries.BLOCKS.getKey(block)).getPath() + "_stage";
             stageName += suffixes.isEmpty() ? ageSuffix : suffixes.get(Math.min(suffixes.size(), ageSuffix));
             return ConfiguredModel.builder().modelFile(models().singleTexture(stageName, mcLoc("minecraft:block/cross"), textureKey, new ResourceLocation(BotaniaSeeds.MODID, "block/" + stageName)).renderType("cutout")).build();

@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "group": "botania_seeds:seed",
+    "key": {
+      "D": {
+        "tag": "forge:dyes/purple"
+      },
+      "S": {
+        "tag": "forge:seeds"
+      }
+    },
+    "pattern": [
+      " D ",
+      "DSD",
+      " D "
+    ],
+    "result": {
+      "count": 4,
+      "item": "botania_seeds:purple_mystical_flower_seed"
+    }
+  }
